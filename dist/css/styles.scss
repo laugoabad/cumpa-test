@@ -1,0 +1,72 @@
+$color-text-primary: #38485E;
+$color-text-secondary: #E06129;
+$color-background-primary: #E8E8E8;
+
+// $bg: linear-gradient(to right, red , yellow);
+$bg: red;
+
+$f1: 1em;
+$f1-1: 1.1em;
+$f2: 1.2em;
+$f3: 1.4em;
+$f4: 1.6em;
+$f5: 1.8em;
+$f6: 2em;
+
+//   .slide-content .scroller {
+//     width: 1024px;
+// }
+
+// * {
+//     border: 1px solid #f00 !important;
+// } 
+
+* {
+     margin: 0;
+     padding: 0;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     font-size: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ body {
+     width: 100%;
+     font-size: 100%;
+     margin: auto;
+     left: 0;
+     top: 0;
+     overflow: hidden;  
+ }
+
+ .butt {
+  background: $bg;
+  border-radius: 0.7em;
+  a {
+    text-decoration: none;
+  }
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+  &.butt-md {
+    width: 6.5em;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    a {
+      font-size: $f1-1;
+    }
+  }
+  &.butt-lg {
+    width: 18.7em;
+    margin: 2.5em auto;
+    padding: 0.62em 5em;
+    a {
+      font-size: $f6;
+    }
+  }
+}
