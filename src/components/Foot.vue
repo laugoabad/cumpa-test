@@ -14,26 +14,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-   @import "./../../public/css/styles.scss";
+   @import "./../css/styles.scss";
    .menu {
        display: flex;
        flex-flow: row nowrap;
        padding: 1.9em;
-       border: 1px solid $color-background-primary;
-       box-shadow: -0.4em -0.4em 0.3em $color-background-primary;
+       border: 1px solid $background-primary;
+       box-shadow: -0.4em -0.4em 0.3em $background-primary;
        border-radius: 1em 1em 0 0;
-       &__actividades {
+       &__actividades, &__horarios,&__mensajes,&__configuracion {
            flex: 1 1 auto; 
        }
-       &__horarios {
-           flex: 1 1 auto;
-       }
-       &__mensajes {
-           flex: 1 1 auto;
-       }
-       &__configuracion {
-           flex: 1 1 auto;
-       }
+     
         img {
            width: 2.1em;
            height: auto;

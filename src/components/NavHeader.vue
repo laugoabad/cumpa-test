@@ -26,21 +26,21 @@
 <script>
 
 export default {
-  name: 'navi',
+  name: 'nav-header',
   
 }
 </script>
 
 <style lang="scss" scoped>
-@import "./../../public/css/styles.scss";
+@import "./../css/styles.scss";
  
  .nav-bar {
-    color: $color-text-primary;
+    color: $color-primary;
     display: flex;
     flex-flow: row nowrap;
     padding: 1.8em 2em 1em 2em;
     margin-bottom: 3em;
-    box-shadow: 0px 3px 6px $color-background-primary;
+    box-shadow: 0px 3px 6px $background-primary;
     align-items: center;
     justify-content: space-between;
       img{ 
@@ -56,9 +56,9 @@ export default {
             height: 3.4em;
             border-radius: 1.7em;
             border: none;
-            background-color: $color-background-primary;
+            background-color: $background-primary;
             &::placeholder{
-              font-size: $f2;
+              font-size: $f1-2;
               padding: 1em;
             }
           }
@@ -67,7 +67,7 @@ export default {
             right: 1.5em;
             border: none;
             font-weight: 300;
-            background-color: $color-background-primary;
+            background-color: $background-primary;
             img {
                 width: 1.5em;
                 font-weight: 700;

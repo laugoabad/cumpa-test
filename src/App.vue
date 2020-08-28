@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container-100">
       <header class="header">
-        <navi></navi>
+       <nav-header></nav-header>
       </header>
       <transition name="fade">
         <router-view />
@@ -19,16 +19,17 @@
 
 
 <script>
-import Activity from "./components/Activity.vue";
+import NavHeader from "./components/NavHeader.vue";
+import Activity from "./views/Activity.vue";
 import Foot from "./components/Foot.vue";
-import Navi from "./components/Navi.vue";
+
 
 export default {
   name: "App",
   components: {
     Foot,
     Activity,
-    Navi
+    NavHeader,
   },
   data() {
     return {
@@ -44,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../public/css/styles.scss";
+@import "./css/styles.scss";
 
 #app {
   -webkit-font-smoothing: antialiased;
