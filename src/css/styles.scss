@@ -13,8 +13,6 @@ $f1-6: 1.6em;
 $f1-8: 1.8em;
 $f2: 2em;
 $f3: 3em;
-
-
 //   .slide-content .scroller {
 //     width: 1024px;
 // }
@@ -44,6 +42,7 @@ $f3: 3em;
 
  a {
     text-decoration: none;
+    color: white;
   }
   ul{
     list-style-type: none;
@@ -81,3 +80,157 @@ $f3: 3em;
   }
 
   
+.title-section {
+  font-size: $f1-8;
+  color: $color-secondary;
+}
+.carousel-slide {
+  width: 80%;
+  margin: 0em auto;
+}
+.title {
+  font-size: $f1-6;
+}
+.slide {
+  .card {
+    margin: 0em auto;
+    padding: 1em 2em;
+    border-radius: 3em;
+    width: 80vw;
+    border: none;
+    .card-title {
+      display: flex;
+      flex-flow: row;
+      padding: 1em;
+      justify-content: center;
+      .card-title-descr {
+        font-size: $f1-2;
+        margin-right: 1.5em;
+      }
+      li {
+        display: inline-block;
+      }
+      img {
+        width: 1.2em;
+        height: 1.2em;
+      }
+    }
+    .card-text {
+      color: $color-primary;
+      font-size: $f1;
+      padding-bottom: 4em;
+    }
+  }
+     .card-img-top {
+      width: 80%;
+      height: auto;
+    }
+}
+
+.schedule {
+  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding: 0.7em;
+  margin: 1em 0em;
+  .day-hour {
+    flex: 40%;
+    display: flex;
+    flex-flow: column;
+    padding-left: 3em;
+
+    .day {
+      display: flex;
+      .day-number {
+        background-color: $color-secondary;
+        padding: 0.2em 0.2em;
+        margin: 0.1em;
+        width: 1.85em;
+        height: 1.85em;
+        border-radius: 0.9em;
+        font-size: $f1-2;
+        font-weight: 500;
+        color: white;
+      }
+      .day-name {
+        font-size: $f1-4;
+        font-weight: 500;
+        padding-left: 1em;
+      }
+    }
+
+    .hour {
+      font-size: $f1-4;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin: 0.1em;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(~@/assets/img/clock.png);
+        background-repeat: no-repeat;
+        background-size: 1.58em;
+        width: 1.58em;
+        height: 1.58em;
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .cost {
+    flex: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  &:hover {
+    background: rgba($color-secondary, 0.2);
+    transition: all 0.3s ease;
+  }
+}
+
+.schedule-screen {
+  .card {
+    margin-top: 20em;
+    border-radius: 2em;
+    padding-bottom: 3em;
+  }
+  .card-body {
+    padding: 0em 3.5em;
+  }
+  .card-text {
+    padding: 1em 2.5em 2em 2.5em;
+  }
+}
+
+.header-reserve-activity {
+  width: 100%;
+  height: 35em;
+  text-align: center;
+  background-image: url('~@/assets/img/1019.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: content;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0em;
+}
+
+.background-selected {
+  background-color: "rgba(224, 97, 41,.5)";
+}
+.background-unselected {
+  background-color: white;
+}
+
+/*mixins-----------------------------------------------*/
+

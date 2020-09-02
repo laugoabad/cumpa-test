@@ -1,10 +1,10 @@
 <template>
     <div>
        <nav class="menu">
-           <div class="menu__actividades"><img src="./../assets/img/bicycle.png" alt=""></div>
-           <div class="menu__horarios"><img src="./../assets/img/clock.png" alt=""></div>
-           <div class="menu__mensajes"><img src="./../assets/img/message.png" alt=""></div>
-           <div class="menu__configuracion"><img src="./../assets/img/configuration.png" alt=""></div>
+           <div class="menu__actividades"><img src="~@/assets/img/bicycle.png" alt=""></div>
+           <div class="menu__horarios"><img src="~@/assets/img/clock.png" alt=""></div>
+           <div class="menu__mensajes"><img src="~@/assets/img/message.png" alt=""></div>
+           <div class="menu__configuracion"><img src="~@/assets/img/configuration.png" alt=""></div>
        </nav>
     </div>
 </template>
@@ -27,7 +27,7 @@ export default {
        }
      
         img {
-           width: 2.1em;
+           width: 2.3em;
            height: auto;
            }
    }

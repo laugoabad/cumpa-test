@@ -6,14 +6,14 @@ Vue.use(VueRouter)
 
   const routes = [
   {
-  //   path: '/',
-  //   name: 'Activities',
-  //   component: () => import('../views/Activity.vue')
-  // },
-  // {
-  //   path: '/activities/reservarActividad',
-  //   name: 'ReserveActivity',
-  //   component: () => import('../views/About.vue')
+    path: '/',
+    name: 'activities',
+    component: () => import('./../views/Activity.vue')
+  },
+  {
+    path: '/reserveActivity/:id',
+    name: 'reserveActivity',
+    component: () => import('./../views/ReserveActivity.vue')
   }
 ]
 

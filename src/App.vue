@@ -4,12 +4,13 @@
       <header class="header">
        <nav-header></nav-header>
       </header>
-      <transition name="fade">
+     
+      <section>
+        <router-link to="/"></router-link>
+      </section>
+       <transition name="fade">
         <router-view />
       </transition>
-      <section>
-        <activity></activity>
-      </section>
       <footer>
         <foot></foot>
       </footer>
@@ -18,9 +19,10 @@
 </template>
 
 
+
 <script>
 import NavHeader from "./components/NavHeader.vue";
-import Activity from "./views/Activity.vue";
+
 import Foot from "./components/Foot.vue";
 
 
@@ -28,7 +30,7 @@ export default {
   name: "App",
   components: {
     Foot,
-    Activity,
+  
     NavHeader,
   },
   data() {
@@ -74,3 +76,4 @@ header {
   opacity: 0;
 }
 </style>
+

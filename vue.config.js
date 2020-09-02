@@ -1,3 +1,6 @@
 module.exports = {
-    publicPath: '/cumpa-dist/'
+  "publicPath": "/cumpa-dist/",
+  "transpileDependencies": [
+    "vuetify"
+  ]
 }

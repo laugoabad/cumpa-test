@@ -18,7 +18,7 @@
           </div>
           <div class="modal-body">
             <div class="activity">{{activityR}}</div>
-            <div class>{{dayNameR}} {{numberR}} {{hourR}}</div>
+            <div class>{{dayNameR}} {{numberR}} {{hourR}} horas</div>
           </div>
           <div class="modal-footer">
             <button type="button" class="butt butt-lg mx-auto">Invitar</button>
